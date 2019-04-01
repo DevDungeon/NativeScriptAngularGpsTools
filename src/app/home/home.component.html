@@ -1,0 +1,11 @@
+<ActionBar class="action-bar">
+    <NavigationButton icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<GridLayout class="page page-content">
+    <StackLayout>
+        <Label id="coordsLabel" [text]="gpsCoordsText" textWrap="true"></Label>
+        <Button text="Get GPS coordinates" (tap)="getGps()"></Button>
+    </StackLayout>
+</GridLayout>
